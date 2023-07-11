@@ -1,0 +1,24 @@
+<script>
+    // 객체안에 객체
+    const car = {
+        engine : {
+            v: 4,
+            wd: "liniar",
+        },
+        name: "아반떼",
+        wheel: ["spare 1","2","3","4"]
+    }
+
+    // 배열 안의 객체
+    const objArray = [
+        {name:"홍길동", age:12},
+        {name:"임꺽정", age:13},
+    ];
+    for (let i = 0; i < objArray.length; i++) {
+        const el = objArray[i];
+        console.log(el);
+        console.log(el.name);
+        
+    }
+
+</script>
