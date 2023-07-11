@@ -37,24 +37,20 @@
     // 연습
     // forEach - name님 안녕하세요 반복 출력
     console.log("forEach");
-    array.forEach((value, index, array) => {
-        console.log(value.name,"님 안녕하세요");
-    });
+    array.forEach((value) => console.log(value.name + "님 안녕하세요"));
     
     // filter - 이름에 '길'자가 들어간 사람만 남기기
     console.log("filter");
-    const filterCheck = (value, index, array) => {
-        return value.name.indexOf("길") !== -1;;
-    }
+    const filterCheck = (value) => value.name.includes("길");
     
     const resultFilter = array.filter(filterCheck);
     console.log(resultFilter);
     
     // map - 나이만 뽑아서 숫자 배열 만들기
     console.log("map");
-    const mapResult = array.map((value, index, array)=> {
-        return value.age;
-    });
+    const mapResult = array.map((value) => value.age);
     console.log(mapResult);
+
+    // 함수는 뱉어내는 자판기가 아니라 변하는 자판기다
 
 </script>
